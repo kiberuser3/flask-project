@@ -1,11 +1,12 @@
 <html>
     <head>
+        <link rel="stylesheet" href=" {{ url_for('static', filename='styles/main_styles.css') }} "></link>
         <title>Автомобили</title>
     </head>
     <body>
         <h1>Автомобили</h1>
         <p>Здесь я раскажу о некоторых автомобилях и их компаниях в подробностях</p>
     </body>
-    <img src=" {{ url_for('static', filename='glavcar.jpg') }}" width="200px"/>
-    <a href="{{ url_for('display_cars_company.html') }}">Автомобили и компании</a>
+    <img src=" {{ url_for('static', filename='images/glavcar.jpg') }} " width="200px"/>
+    <a href=" {{ url_for('static', filename='templates/cars_company.html') }} ">Компании и авто</a>
 </html>
